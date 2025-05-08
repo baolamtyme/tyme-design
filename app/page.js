@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Home() {
-  const [heroText, setHeroText] = useState('Tyme is a relative concept');
+  const [heroText, setHeroText] = useState('Tyme is a\nrelative concept');
   const [fontSize, setFontSize] = useState(150);
   const [tracking, setTracking] = useState(-5);
   const [lineHeight, setLineHeight] = useState(1);
