@@ -1,0 +1,65 @@
+import Image from 'next/image'
+
+export default function Home() {
+  return (
+    <main className="min-h-screen">
+      {/* Header */}
+      <header className="sticky top-0 bg-white/90 backdrop-blur-sm px-6 py-4 flex justify-between items-center">
+        <h1 className="text-xl font-medium">Phonic Standard</h1>
+        <nav>
+          <ul className="flex gap-6">
+            <li><a href="#" className="hover:opacity-70">Specimens</a></li>
+            <li><a href="#" className="hover:opacity-70">About</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      {/* Hero Specimen */}
+      <section className="min-h-[80vh] flex items-center justify-center px-6">
+        <h2 className="text-[10vw] leading-none tracking-tighter text-center font-medium">
+          A contemporary typeface with distinctive character
+        </h2>
+      </section>
+
+      {/* Body Text */}
+      <section className="px-6 py-24">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-lg leading-relaxed text-center">
+            Phonic Standard is a versatile and modern typeface that combines geometric precision with organic warmth. Its balanced proportions and careful attention to detail make it equally suitable for both display and text applications. The family includes multiple weights and styles, offering designers a comprehensive toolkit for various typographic needs.
+          </p>
+        </div>
+      </section>
+
+      {/* Image Specimens */}
+      <section className="px-6">
+        <div className="relative w-full h-[60vh] my-12">
+          <Image 
+            src="/placeholder-1.jpg" 
+            alt="Type specimen 1"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="relative w-full h-[60vh] my-12">
+          <Image 
+            src="/placeholder-2.jpg" 
+            alt="Type specimen 2"
+            fill
+            className="object-cover"
+          />
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="px-6 py-8 mt-24">
+        <div className="text-sm text-gray-500">
+          <a href="mailto:info@phonicstandard.com" className="hover:text-gray-800">
+            info@phonicstandard.com
+          </a>
+          <p className="mt-2">© 2024 Phonic Standard. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  )
+}
