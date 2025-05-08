@@ -1,0 +1,272 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.0
+2 info using node@v22.12.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/baolam/Desktop/phonic-standard/.npmrc
+5 silly config load:file:/Users/baolam/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install tailwindcss postcss autoprefixer
+8 verbose argv "install" "tailwindcss" "postcss" "autoprefixer" "--save-dev"
+9 verbose logfile logs-max:10 dir:/Users/baolam/Desktop/phonic-standard/.npm-cache/_logs/2025-05-08T10_27_25_251Z-
+10 verbose logfile /Users/baolam/Desktop/phonic-standard/.npm-cache/_logs/2025-05-08T10_27_25_251Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest autoprefixer@^10.4.17
+15 silly packumentCache full:https://registry.npmjs.org/autoprefixer cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/autoprefixer 15ms (cache hit)
+17 silly packumentCache full:https://registry.npmjs.org/autoprefixer set size:1238679 disposed:false
+18 silly fetch manifest postcss@^8.4.35
+19 silly packumentCache full:https://registry.npmjs.org/postcss cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/postcss 3ms (cache hit)
+21 silly packumentCache full:https://registry.npmjs.org/postcss set size:687240 disposed:false
+22 silly fetch manifest tailwindcss@^3.4.1
+23 silly packumentCache full:https://registry.npmjs.org/tailwindcss cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/tailwindcss 10ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/tailwindcss set size:8875827 disposed:false
+26 silly placeDep ROOT autoprefixer@10.4.21 REPLACE for: tyme-design@0.1.0 want: ^10.4.17
+27 silly placeDep ROOT postcss@8.5.3 REPLACE for: tyme-design@0.1.0 want: ^8.4.35
+28 silly placeDep ROOT tailwindcss@3.4.17 REPLACE for: tyme-design@0.1.0 want: ^3.4.1
+29 silly reify moves {}
+30 silly audit bulk request {
+30 silly audit   '@alloc/quick-lru': [ '5.2.0' ],
+30 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+30 silly audit   '@jridgewell/gen-mapping': [ '0.3.8' ],
+30 silly audit   '@jridgewell/resolve-uri': [ '3.1.2' ],
+30 silly audit   '@jridgewell/set-array': [ '1.2.1' ],
+30 silly audit   '@jridgewell/sourcemap-codec': [ '1.5.0' ],
+30 silly audit   '@jridgewell/trace-mapping': [ '0.3.25' ],
+30 silly audit   '@next/env': [ '14.1.0' ],
+30 silly audit   '@next/swc-darwin-arm64': [ '14.1.0' ],
+30 silly audit   '@next/swc-darwin-x64': [ '14.1.0' ],
+30 silly audit   '@next/swc-linux-arm64-gnu': [ '14.1.0' ],
+30 silly audit   '@next/swc-linux-arm64-musl': [ '14.1.0' ],
+30 silly audit   '@next/swc-linux-x64-gnu': [ '14.1.0' ],
+30 silly audit   '@next/swc-linux-x64-musl': [ '14.1.0' ],
+30 silly audit   '@next/swc-win32-arm64-msvc': [ '14.1.0' ],
+30 silly audit   '@next/swc-win32-ia32-msvc': [ '14.1.0' ],
+30 silly audit   '@next/swc-win32-x64-msvc': [ '14.1.0' ],
+30 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+30 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+30 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+30 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+30 silly audit   '@swc/helpers': [ '0.5.2' ],
+30 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+30 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+30 silly audit   'any-promise': [ '1.3.0' ],
+30 silly audit   anymatch: [ '3.1.3' ],
+30 silly audit   arg: [ '5.0.2' ],
+30 silly audit   'balanced-match': [ '1.0.2' ],
+30 silly audit   'binary-extensions': [ '2.3.0' ],
+30 silly audit   'brace-expansion': [ '2.0.1' ],
+30 silly audit   braces: [ '3.0.3' ],
+30 silly audit   browserslist: [ '4.24.5' ],
+30 silly audit   busboy: [ '1.6.0' ],
+30 silly audit   'camelcase-css': [ '2.0.1' ],
+30 silly audit   'caniuse-lite': [ '1.0.30001717' ],
+30 silly audit   chokidar: [ '3.6.0' ],
+30 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+30 silly audit   'client-only': [ '0.0.1' ],
+30 silly audit   'color-convert': [ '2.0.1' ],
+30 silly audit   'color-name': [ '1.1.4' ],
+30 silly audit   commander: [ '4.1.1' ],
+30 silly audit   'cross-spawn': [ '7.0.6' ],
+30 silly audit   cssesc: [ '3.0.0' ],
+30 silly audit   didyoumean: [ '1.2.2' ],
+30 silly audit   dlv: [ '1.1.3' ],
+30 silly audit   eastasianwidth: [ '0.2.0' ],
+30 silly audit   'electron-to-chromium': [ '1.5.151' ],
+30 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+30 silly audit   escalade: [ '3.2.0' ],
+30 silly audit   'fast-glob': [ '3.3.3' ],
+30 silly audit   fastq: [ '1.19.1' ],
+30 silly audit   'fill-range': [ '7.1.1' ],
+30 silly audit   'foreground-child': [ '3.3.1' ],
+30 silly audit   'fraction.js': [ '4.3.7' ],
+30 silly audit   fsevents: [ '2.3.3' ],
+30 silly audit   'function-bind': [ '1.1.2' ],
+30 silly audit   glob: [ '10.4.5' ],
+30 silly audit   'graceful-fs': [ '4.2.11' ],
+30 silly audit   hasown: [ '2.0.2' ],
+30 silly audit   'is-binary-path': [ '2.1.0' ],
+30 silly audit   'is-core-module': [ '2.16.1' ],
+30 silly audit   'is-extglob': [ '2.1.1' ],
+30 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+30 silly audit   'is-glob': [ '4.0.3' ],
+30 silly audit   'is-number': [ '7.0.0' ],
+30 silly audit   isexe: [ '2.0.0' ],
+30 silly audit   jackspeak: [ '3.4.3' ],
+30 silly audit   jiti: [ '1.21.7' ],
+30 silly audit   'js-tokens': [ '4.0.0' ],
+30 silly audit   lilconfig: [ '3.1.3' ],
+30 silly audit   'lines-and-columns': [ '1.2.4' ],
+30 silly audit   'loose-envify': [ '1.4.0' ],
+30 silly audit   'lru-cache': [ '10.4.3' ],
+30 silly audit   merge2: [ '1.4.1' ],
+30 silly audit   micromatch: [ '4.0.8' ],
+30 silly audit   minimatch: [ '9.0.5' ],
+30 silly audit   minipass: [ '7.1.2' ],
+30 silly audit   mz: [ '2.7.0' ],
+30 silly audit   nanoid: [ '3.3.11' ],
+30 silly audit   next: [ '14.1.0' ],
+30 silly audit   postcss: [ '8.4.31', '8.5.3' ],
+30 silly audit   'node-releases': [ '2.0.19' ],
+30 silly audit   'normalize-path': [ '3.0.0' ],
+30 silly audit   'normalize-range': [ '0.1.2' ],
+30 silly audit   'object-assign': [ '4.1.1' ],
+30 silly audit   'object-hash': [ '3.0.0' ],
+30 silly audit   'package-json-from-dist': [ '1.0.1' ],
+30 silly audit   'path-key': [ '3.1.1' ],
+30 silly audit   'path-parse': [ '1.0.7' ],
+30 silly audit   'path-scurry': [ '1.11.1' ],
+30 silly audit   picocolors: [ '1.1.1' ],
+30 silly audit   picomatch: [ '2.3.1' ],
+30 silly audit   pify: [ '2.3.0' ],
+30 silly audit   pirates: [ '4.0.7' ],
+30 silly audit   'postcss-import': [ '15.1.0' ],
+30 silly audit   'postcss-js': [ '4.0.1' ],
+30 silly audit   'postcss-nested': [ '6.2.0' ],
+30 silly audit   'postcss-selector-parser': [ '6.1.2' ],
+30 silly audit   'postcss-value-parser': [ '4.2.0' ],
+30 silly audit   'queue-microtask': [ '1.2.3' ],
+30 silly audit   react: [ '18.3.1' ],
+30 silly audit   'react-dom': [ '18.3.1' ],
+30 silly audit   'read-cache': [ '1.0.0' ],
+30 silly audit   readdirp: [ '3.6.0' ],
+30 silly audit   resolve: [ '1.22.10' ],
+30 silly audit   reusify: [ '1.1.0' ],
+30 silly audit   'run-parallel': [ '1.2.0' ],
+30 silly audit   scheduler: [ '0.23.2' ],
+30 silly audit   'shebang-command': [ '2.0.0' ],
+30 silly audit   'shebang-regex': [ '3.0.0' ],
+30 silly audit   'signal-exit': [ '4.1.0' ],
+30 silly audit   'source-map-js': [ '1.2.1' ],
+30 silly audit   streamsearch: [ '1.1.0' ],
+30 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+30 silly audit   'strip-ansi': [ '6.0.1', '7.1.0' ],
+30 silly audit   'styled-jsx': [ '5.1.1' ],
+30 silly audit   sucrase: [ '3.35.0' ],
+30 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+30 silly audit   thenify: [ '3.3.1' ],
+30 silly audit   'thenify-all': [ '1.6.0' ],
+30 silly audit   'to-regex-range': [ '5.0.1' ],
+30 silly audit   'ts-interface-checker': [ '0.1.13' ],
+30 silly audit   tslib: [ '2.8.1' ],
+30 silly audit   'update-browserslist-db': [ '1.1.3' ],
+30 silly audit   'util-deprecate': [ '1.0.2' ],
+30 silly audit   which: [ '2.0.2' ],
+30 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+30 silly audit   yaml: [ '2.7.1' ],
+30 silly audit   autoprefixer: [ '10.4.21' ],
+30 silly audit   tailwindcss: [ '3.4.17' ],
+30 silly audit   'postcss-load-config': [ '4.0.2' ]
+30 silly audit }
+31 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-x64-msvc
+32 silly reify mark deleted [
+32 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-x64-msvc'
+32 silly reify ]
+33 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-ia32-msvc
+34 silly reify mark deleted [
+34 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-ia32-msvc'
+34 silly reify ]
+35 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-arm64-msvc
+36 silly reify mark deleted [
+36 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-win32-arm64-msvc'
+36 silly reify ]
+37 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-x64-musl
+38 silly reify mark deleted [
+38 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-x64-musl'
+38 silly reify ]
+39 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-x64-gnu
+40 silly reify mark deleted [
+40 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-x64-gnu'
+40 silly reify ]
+41 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-arm64-musl
+42 silly reify mark deleted [
+42 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-arm64-musl'
+42 silly reify ]
+43 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-arm64-gnu
+44 silly reify mark deleted [
+44 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-linux-arm64-gnu'
+44 silly reify ]
+45 verbose reify failed optional dependency /Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-darwin-x64
+46 silly reify mark deleted [
+46 silly reify   '/Users/baolam/Desktop/phonic-standard/node_modules/@next/swc-darwin-x64'
+46 silly reify ]
+47 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 466ms
+48 silly audit report {
+48 silly audit report   next: [
+48 silly audit report     {
+48 silly audit report       id: 1099638,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-gp8f-8m3g-qvj9',
+48 silly audit report       title: 'Next.js Cache Poisoning',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.10',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1100421,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-g77x-44xx-532m',
+48 silly audit report       title: 'Denial of Service condition in Next.js image optimization',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '>=10.0.0 <14.2.7',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1101380,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-7gfc-8cq8-jh5f',
+48 silly audit report       title: 'Next.js authorization bypass vulnerability',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=9.5.5 <14.2.15',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1101438,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-7m27-7ghc-44w9',
+48 silly audit report       title: 'Next.js Allows a Denial of Service (DoS) with Server Actions',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.21',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1103622,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-f82v-jwr5-mffw',
+48 silly audit report       title: 'Authorization Bypass in Next.js Middleware',
+48 silly audit report       severity: 'critical',
+48 silly audit report       vulnerable_versions: '>=14.0.0 <14.2.25',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1097295,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-fr5h-rqp8-mj6g',
+48 silly audit report       title: 'Next.js Server-Side Request Forgery in Server Actions',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=13.4.0 <14.1.1',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ]
+48 silly audit report }
+49 silly packumentCache corgi:https://registry.npmjs.org/next cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/next 30ms (cache hit)
+51 silly packumentCache corgi:https://registry.npmjs.org/next set size:19866044 disposed:false
+52 silly ADD node_modules/fsevents
+53 silly ADD
+54 silly ADD
+55 silly ADD
+56 silly ADD
+57 silly ADD
+58 silly ADD
+59 silly ADD
+60 silly ADD
+61 verbose cwd /Users/baolam/Desktop/phonic-standard
+62 verbose os Darwin 24.1.0
+63 verbose node v22.12.0
+64 verbose npm  v10.9.0
+65 verbose exit 0
+66 info ok
