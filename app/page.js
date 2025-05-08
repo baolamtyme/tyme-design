@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className={`min-h-screen ${isDarkTheme ? 'bg-[#003033] text-[#88DBDD]' : 'bg-white text-black'}`}>
       {/* Header */}
-      <header className={`sticky top-0 ${isDarkTheme ? 'bg-[#003033]/90' : 'bg-white/90'} backdrop-blur-sm px-6 py-4 flex justify-between items-center`}>
+      <header className={`sticky top-0 bg-transparent backdrop-blur-sm px-6 py-4 flex justify-between items-center`}>
         <h1 className="text-xl font-medium font-['GoTymeSans']">Tyme Design</h1>
         <button
           onClick={() => setIsDarkTheme(!isDarkTheme)}
@@ -54,17 +54,6 @@ export default function Home() {
                 <div className="flex-1">
                   <div className="flex justify-between items-center">
                     <label className={`block text-sm font-medium ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-700'} font-['GoTymeSans']`}>Font Size</label>
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="number"
-                        value={fontSize}
-                        onChange={(e) => setFontSize(Number(e.target.value))}
-                        className={`w-16 px-2 py-1 text-sm border-b rounded-none ${isDarkTheme ? 'border-[#88DBDD] bg-transparent text-[#88DBDD]' : 'border-gray-300 bg-transparent text-black'} font-['GoTymeSans'] focus:outline-none`}
-                        min="32"
-                        max="200"
-                      />
-                      <span className={`text-sm ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-500'} font-['GoTymeSans']`}>px</span>
-                    </div>
                   </div>
                   <input
                     type="range"
@@ -73,23 +62,32 @@ export default function Home() {
                     value={fontSize}
                     onChange={(e) => setFontSize(Number(e.target.value))}
                     className={`w-full h-1 rounded-full appearance-none cursor-pointer ${isDarkTheme ? 'bg-[#88DBDD]/30' : 'bg-gray-300'} font-['GoTymeSans']`}
-                    style={{ WebkitAppearance: 'none', MozAppearance: 'none' }}
+                    style={{ 
+                      WebkitAppearance: 'none', 
+                      MozAppearance: 'none',
+                      '&::-webkit-slider-thumb': {
+                        WebkitAppearance: 'none',
+                        appearance: 'none',
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer'
+                      },
+                      '&::-moz-range-thumb': {
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer',
+                        border: 'none'
+                      }
+                    }}
                   />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center">
                     <label className={`block text-sm font-medium ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-700'} font-['GoTymeSans']`}>Tracking</label>
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="number"
-                        value={tracking}
-                        onChange={(e) => setTracking(Number(e.target.value))}
-                        className={`w-16 px-2 py-1 text-sm border-b rounded-none ${isDarkTheme ? 'border-[#88DBDD] bg-transparent text-[#88DBDD]' : 'border-gray-300 bg-transparent text-black'} font-['GoTymeSans'] focus:outline-none`}
-                        min="-10"
-                        max="10"
-                      />
-                      <span className={`text-sm ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-500'} font-['GoTymeSans']`}>px</span>
-                    </div>
                   </div>
                   <input
                     type="range"
@@ -98,24 +96,32 @@ export default function Home() {
                     value={tracking}
                     onChange={(e) => setTracking(Number(e.target.value))}
                     className={`w-full h-1 rounded-full appearance-none cursor-pointer ${isDarkTheme ? 'bg-[#88DBDD]/30' : 'bg-gray-300'} font-['GoTymeSans']`}
-                    style={{ WebkitAppearance: 'none', MozAppearance: 'none' }}
+                    style={{ 
+                      WebkitAppearance: 'none', 
+                      MozAppearance: 'none',
+                      '&::-webkit-slider-thumb': {
+                        WebkitAppearance: 'none',
+                        appearance: 'none',
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer'
+                      },
+                      '&::-moz-range-thumb': {
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer',
+                        border: 'none'
+                      }
+                    }}
                   />
                 </div>
                 <div className="flex-1">
                   <div className="flex justify-between items-center">
                     <label className={`block text-sm font-medium ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-700'} font-['GoTymeSans']`}>Line Height</label>
-                    <div className="flex items-center gap-2">
-                      <input
-                        type="number"
-                        value={lineHeight}
-                        onChange={(e) => setLineHeight(Number(e.target.value))}
-                        className={`w-16 px-2 py-1 text-sm border-b rounded-none ${isDarkTheme ? 'border-[#88DBDD] bg-transparent text-[#88DBDD]' : 'border-gray-300 bg-transparent text-black'} font-['GoTymeSans'] focus:outline-none`}
-                        min="0.5"
-                        max="2"
-                        step="0.1"
-                      />
-                      <span className={`text-sm ${isDarkTheme ? 'text-[#88DBDD]' : 'text-gray-500'} font-['GoTymeSans']`}>x</span>
-                    </div>
                   </div>
                   <input
                     type="range"
@@ -125,7 +131,27 @@ export default function Home() {
                     value={lineHeight}
                     onChange={(e) => setLineHeight(Number(e.target.value))}
                     className={`w-full h-1 rounded-full appearance-none cursor-pointer ${isDarkTheme ? 'bg-[#88DBDD]/30' : 'bg-gray-300'} font-['GoTymeSans']`}
-                    style={{ WebkitAppearance: 'none', MozAppearance: 'none' }}
+                    style={{ 
+                      WebkitAppearance: 'none', 
+                      MozAppearance: 'none',
+                      '&::-webkit-slider-thumb': {
+                        WebkitAppearance: 'none',
+                        appearance: 'none',
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer'
+                      },
+                      '&::-moz-range-thumb': {
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: isDarkTheme ? '#88DBDD' : '#000000',
+                        cursor: 'pointer',
+                        border: 'none'
+                      }
+                    }}
                   />
                 </div>
               </div>
