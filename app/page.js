@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <main className={`min-h-screen ${isDarkTheme ? 'bg-[#003033] text-[#88DBDD]' : 'bg-white text-black'}`}>
       {/* Header */}
-      <header className={`sticky top-0 bg-transparent backdrop-blur-sm px-6 py-4 flex justify-between items-center`}>
+      <header className={`sticky top-0 bg-transparent px-6 py-4 flex justify-between items-center`}>
         <h1 className="text-xl font-medium font-['GoTymeSans']">Tyme Design</h1>
         <button
           onClick={() => setIsDarkTheme(!isDarkTheme)}
